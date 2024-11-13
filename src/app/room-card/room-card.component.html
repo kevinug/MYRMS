@@ -1,0 +1,24 @@
+<div class="room-card-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Room ID: </mat-card-title>
+      <mat-card-subtitle>Status: </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="cameradue.jpg" alt="Room image" class="room-image">
+
+    <mat-card-content>
+      <p>
+        Room Type: Double Room
+      </p>
+      <p>
+        Number of Beds:1
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="updateStatus(room, 'clean')">Clean</button>
+      <button mat-raised-button color="accent" (click)="updateStatus(room, 'dirty')">Dirty</button>
+      <button mat-raised-button color="warn" (click)="updateStatus(room, 'check-in')">Check-In</button>
+      <button mat-raised-button color="accent" (click)="updateStatus(room, 'full')">Full</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

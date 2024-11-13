@@ -1,0 +1,16 @@
+.room-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.room-card {
+  width: 300px;
+}
+
+.room-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
